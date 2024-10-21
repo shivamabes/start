@@ -1,66 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registration Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="valida.js" defer></script>
 </head>
 <body>
-  <table>
-  <h1>Registration Form</h1>
-  <form action="" method="get">
-  <tr>
-  <td><label for="usr">User Id* :</label></td>
-  <td><input type="text" id="usr" required maxlength="12" minlength="5"><br></td>
-  </tr>
-  <tr>
-  <td><label for="pss">Password* :</label></td>
-  <td><input type="password" id="pss" required maxlength="12" minlength="7"></td>
-  </tr>
-  <tr>
-    <td><label for="nme">Name* :</label></td>
-    <td><input type="text" id="nme" required></td>
-    </tr>
-    <tr>
-      <td><label for="adss">Address :</label></td>
-      <td><input type="text" id="adss" placeholder="Optional"></td>
-      </tr>
-      <tr>
-        <td><label for="cntry">Country* :</label></td>
-        <td><select name="cntry" id="cntry" required>
-           <option value="">Select Country</option>
-           <option value="Germany">Germany</option>
-           <option value="India" selected>India</option>
-           <option value="America">America</option>
-           <option value="Russia">Russia</option>
-        </select>
-      </td>
-        </tr>
-        <tr>
-          <td><label for="zpp">Zip Code* :</label></td>
-          <td><input type="number" id="zpp" required></td>
-          </tr>
-         <tr>
-            <td><label for="eml">Email* :</label></td>
-            <td><input type="email" id="eml" required></td>
-         </tr>
-         <tr>
-          <td><label for="sx">Sex* :</label></td>
-          <td><input type="radio" id="sx">Male
-          <input type="radio" id="sx">Female</td>
-          </tr>
-          <tr>
-            <td><label for="ln">Language* :</label></td>
-            <td><input type="radio" id="ln">English
-            <input type="radio" id="ln">Non-English</td>
+    <table>
+        <h1>Registration Form</h1>
+        <form id="registrationForm">
+            <tr>
+                <td><label for="usr">User Id* :</label></td>
+                <td><input type="text" id="usr" required maxlength="12" minlength="5"><br></td>
             </tr>
             <tr>
-              <td><label for="abt">About :</label></td>
-              <td><textarea name="abt" id="abt" rows="5" cols="20" placeholder="Optional"></textarea></td>
-           </tr>
-        <tr><td><button type="submit">Submit</button></td></tr>
-
-</form>
-</table>
+                <td><label for="pss">Password* :</label></td>
+                <td><input type="password" id="pss" required maxlength="12" minlength="7"></td>
+            </tr>
+            <tr>
+                <td><label for="nme">Name* :</label></td>
+                <td><input type="text" id="nme" required></td>
+            </tr>
+            <tr>
+                <td><label for="adss">Address :</label></td>
+                <td><input type="text" id="adss" placeholder="Optional"></td>
+            </tr>
+            <tr>
+                <td><label for="cntry">Country* :</label></td>
+                <td>
+                    <select name="cntry" id="cntry" required>
+                        <option value="">Select Country</option>
+                        <option value="Germany">Germany</option>
+                        <option value="India" selected>India</option>
+                        <option value="America">America</option>
+                        <option value="Russia">Russia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="zpp">Zip Code* :</label></td>
+                <td><input type="number" id="zpp" required></td>
+            </tr>
+            <tr>
+                <td><label for="eml">Email* :</label></td>
+                <td><input type="email" id="eml" required></td>
+            </tr>
+            <tr>
+                <td><label for="sx">Sex* :</label></td>
+                <td>
+                    <input type="radio" name="sex" value="Male">Male
+                    <input type="radio" name="sex" value="Female">Female
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ln">Language* :</label></td>
+                <td>
+                    <input type="radio" name="language" value="English">English
+                    <input type="radio" name="language" value="Non-English">Non-English
+                </td>
+            </tr>
+            <tr>
+                <td><label for="abt">About :</label></td>
+                <td><textarea name="abt" id="abt" rows="5" cols="20" placeholder="Optional"></textarea></td>
+            </tr>
+            <tr>
+                <td><button type="submit">Submit</button></td>
+            </tr>
+        </form>
+    </table>
 </body>
 </html>
