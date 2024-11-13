@@ -12,14 +12,14 @@
   <script>
     async function fetchdata(){
   try {
-    let response=await fetch("https://api.github.com/users?per_page=10");
+    let response=await fetch("https://saurav.tech/NewsAPI/top-headlines/category/health/in.json");
     let data=await response.json();
     data.forEach(element => {
       let h1=document.createElement("h1");
-      h1.textContent=element.login;
+      h1.textContent=element.name;
       let a=document.createElement("a");
-      a.textContent=element.login;
-      a.setAttribute("href",element.html_url);
+      a.textContent=element.id;
+      a.setAttribute("href",element.urlToImage);
       let top=document.getElementById("top");
       top.appendChild(h1);
       top.appendChild(a);
